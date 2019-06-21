@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  scheduled_for: 2019-06-20 19:36:26
+  created_by: 1
+  start_time: 2019-06-20 19:36:26
+  end_time: 2019-06-20 19:36:26
+  completed: false
+
+two:
+  event_name: MyString
+  scheduled_for: 2019-06-20 19:36:26
+  created_by: 1
+  start_time: 2019-06-20 19:36:26
+  end_time: 2019-06-20 19:36:26
+  completed: false
