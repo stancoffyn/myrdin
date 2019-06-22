@@ -1,11 +1,26 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  token: MyString
-  auth_type: 
-  active: 
+  token: 7c54bb9e08fada132981
+  auth_type: 0
+  active: true
 
 two:
-  token: MyString
-  auth_type: 
-  active: 
+  token: 5a87109edc67d3417f6e
+  auth_type: 1
+  active: true
+
+three:
+  token: 9bd50902ace1943a21e1
+  auth_type: 2
+  active: true
+
+four: 
+  token: e8eae83ce1ddc36707fb
+  auth_type: 3
+  active: true
+
+five: 
+  token: db30b6c9fbb472751247
+  auth_type: 4
+  active: true

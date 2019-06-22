@@ -3,6 +3,16 @@ class CharactersController < ApplicationController
     render json: Character.all
   end
 
+  def batch
+    if master_or_core? || raid_leader?
+      characters = batch_character_params
+      characters.each do |c|
+        
+      end
+    else unauthorized!
+    end
+  end
+
   def create
     if master_or_core? || raid_leader?
       new_character = Character.new(character_params)
@@ -19,7 +29,7 @@ class CharactersController < ApplicationController
       character = Character.find(params[:id])
       character.update_attributes(ps)
       character.save
-      render json: {state: 'SUCCESS', data: character }, status: :ok
+      render json: { state: 'SUCCESS', data: character }, status: :ok
     else
       unauthorized!
     end
@@ -28,7 +38,7 @@ class CharactersController < ApplicationController
   def destroy
     if master_or_core? || raid_leader?
       Character.destroy(params[:id])
-      render json: {state: 'SUCESS'}, status: :ok
+      render json: { state: 'SUCESS' }, status: :ok
     else
       unauthorized!
     end
@@ -37,7 +47,11 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:name, :character_class_type, :level, :last_online)
+    params.require(:character).permit(:name, :character_class_type,
+                                      :level, :last_online)
+  end
+
+  def batch_character_params
+    params.permit(characters: [])
   end
 end
- 

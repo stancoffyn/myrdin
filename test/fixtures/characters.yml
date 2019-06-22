@@ -1,11 +1,10 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+one: 
+  name: shafaron
+  level: 48
+  character_class_type: 11
+  last_online: 2019-06-20 19:36:26
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+two: 
+  name: bhindu
+  level: 51
+  character_class_type: 4

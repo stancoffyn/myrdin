@@ -26,6 +26,10 @@ end
 
 group :development do
   gem 'faker'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'miniskirt'
+  gem 'pry'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

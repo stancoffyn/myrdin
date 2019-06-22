@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: myrdin
+  database: myrdin_test
   username: myrdin
   password: ZKNbeWD$f75+D?B5{V9
 # As with config/secrets.yml, you never want to store sensitive information,
