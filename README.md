@@ -1,24 +1,10 @@
-# README
+# Myrdin
+## Manage raid DKP via RESTful services
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+These services are used to configure, record, and calculate DKP. Technically this can be used by any game, however its original purpose is to record World Of Warcraft Classic server DKP. Since the implementation of personal loot in game, most existing loot management systems of the like no longer exist, or are so out of date as to not be functional.
 
-Things you may want to cover:
+These services are intended to be consumed with a companion addon in game, which will perform the requisite commands to update roster dkp attendance and kickoff dkp calculations
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO: link to the addon
+TODO: Installation instructions
+TODO: usage gotchas
